@@ -1,4 +1,4 @@
-# Projeto `Covid-19 - Análise socieconômica na pandemia`
+# Projeto `Covid-19 - Análise socioeconômica na pandemia`
 
 ## Equipe `Grupo de BD Genérico`
 * `Lucas Fernandes André`
