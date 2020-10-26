@@ -14,7 +14,7 @@
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`againstcovid19 - Taiwan - Cases` | `https://againstcovid19.com/taiwan/cases` | `Relação de casos de Taiwan baseado em relações de pessoas, em que cada nó é uma pessoa e cada aresta é o tipo de relação entre as pessoas`
-`Casos globais de Covid-19` | `https://github.com/owid/covid-19-data/tree/master/public/data` |  `Dados globais que analisam diversas características da população de um determinado país, como renda, expectativa de vida, etc.`
-`Dados socioeconômicos de Taiwan` | `https://eng.stat.gov.tw/mp.asp?mp=5` | `Database relacionado aos dados socioeconômicos de Taiwan.`
+`againstcovid19 - Taiwan - Cases` | https://againstcovid19.com/taiwan/cases | `Relação de casos de Taiwan baseado em relações de pessoas, em que cada nó é uma pessoa e cada aresta é o tipo de relação entre as pessoas`
+`Casos globais de Covid-19` | https://github.com/owid/covid-19-data/tree/master/public/data |  `Dados globais que analisam diversas características da população de um determinado país, como renda, expectativa de vida, etc.`
+`Dados socioeconômicos de Taiwan` | https://eng.stat.gov.tw/mp.asp?mp=5 | `Database relacionado aos dados socioeconômicos de Taiwan.`
 
