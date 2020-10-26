@@ -5,7 +5,7 @@
 > [Link](slides/apresentacao.pdf) para slides sobre a proposta do projeto final.
 ## Motivação e Contexto
 
-Dentro do contexto da pandemia de 2020, decidimos analisar o impacto que as diferentes condições socioeconômicas podem fazer na contaminação da população de um país. Tendo como motivação achar quanto que a condição de vida da população no país faz com que a pandemia se diferencie de outros países.
+> Dentro do contexto da pandemia de 2020, decidimos analisar o impacto que as diferentes condições socioeconômicas podem fazer na contaminação da população de um país. Tendo como motivação achar quanto que a condição de vida da população no país faz com que a pandemia se diferencie de outros países.
 
 ## Método
 
