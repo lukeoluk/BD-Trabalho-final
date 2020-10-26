@@ -7,6 +7,7 @@
 ## Motivação e Contexto
 
 > Descrição do tema do projeto, incluindo motivação e contexto gerador.
+Dentro do contexto da pandemia de 2020, decidimos analisar o impacto que as diferentes condições socioeconômicas podem fazer na contaminação da população de um país. Tendo como motivação achar quanto que a condição de vida da população no país faz com que a pandemia se diferencie de outros países.
 
 ## Método
 
