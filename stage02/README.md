@@ -17,4 +17,4 @@
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`<título da base>` | `<link para a página da base>` | `<breve descrição da base>`
+`againstcovid19 - Taiwan - Cases` | `https://againstcovid19.com/taiwan/cases` | `Relação de casos de Taiwan baseado em relações de pessoas, em que cada nó é uma pessoa e cada aresta é o tipo de relação entre as pessoas`
