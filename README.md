@@ -7,3 +7,5 @@
 
 ## Resumo do Projeto
  A partir de dados de diferentes países, analisaremos os dados socieconômicos mais diversos de países e cruzaremos com os dados de transmissão do mesmo país para conseguirmos conclusões do quanto as diferentes características de vida de algum país pode impactar a contaminação de sua população.
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lukeoluk/BD-Trabalho-final/HEAD)
