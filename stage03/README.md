@@ -3,4 +3,4 @@
 ## Nesta etapa serão feitos a modelagem inicial e primeiro conjunto de análises em um dos modelos lógicos.
 
 ## Resumo
-> Nessa etapa foram criados um modelo conceitual mostrando os dados que serão usados e como eles poderão ser relacionados a partir de um diagrama [###### (clique aqui)](./diagramas/relacionamentos.pdf), e as primeiras QUERYs usando SQL para relacionar os dados das tabelas [(###### clique aqui)]().
+> Nessa etapa foram criados um modelo conceitual mostrando os dados que serão usados e como eles poderão ser relacionados a partir de um diagrama [(link)](./diagramas/relacionamentos.pdf), e as primeiras QUERYs usando SQL para relacionar os dados das tabelas [(link)]().
