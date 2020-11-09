@@ -1,9 +1,6 @@
-# Projeto `Covid-19 - Análise socioeconômica na pandemia`
+# Etapa 3 - Primeiros Modelos e Análises
 
-## Equipe `Grupo de BD Genérico`
-* `Lucas Fernandes André`
-* `Gabriel Massuyoshi Sato`
-* `Caio Lucas Silveira De Sousa`
+## Nesta etapa serão feitos a modelagem inicial e primeiro conjunto de análises em um dos modelos lógicos.
 
-## Resumo do Projeto
-> A partir de dados diversos de diferentes países, analisaremos os dados socioecônomicos de países e cruzaremos com os dados de transmissão de determinados países para conseguirmos conclusões do quanto as diferentes características de vida de um país pode impactar a contaminação de sua população, número de mortes, etc.
+## Resumo
+> Nessa etapa foram criados um modelo conceitual mostrando os dados que serão usados e como eles poderão ser relacionados a partir de um diagrama [Link](./diagramas/relacionamentos.pdf), e as primeiras QUERYs usando SQL para relacionar os dados das tabelas.
