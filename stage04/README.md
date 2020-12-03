@@ -7,7 +7,7 @@
 ## Modelo Conceitual Atualizado
 
 > Coloque aqui a imagem do modelo conceitual atualizado em ER ou UML, como o exemplo a seguir:
-> ![ER Taxi](images/er-taxi.png)
+> ![ER](ER2.jpg)
 
 ## Modelos Lógicos Atualizados
 
