@@ -34,7 +34,7 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`GEODATASOURCE-COUNTRY-BORDERS.csv` | https://github.com/geodatasource/country-borders | `Mostra as fronteiras dos países'
+`GEODATASOURCE-COUNTRY-BORDERS.csv` | https://github.com/geodatasource/country-borders | `Mostra as fronteiras dos países`
 `country-and-continent-codes-list-csv_csv.csv` | https://datahub.io/JohnSnowLabs/country-and-continent-codes-list | `Mostra países e qual continente eles pertencem`
 
 
