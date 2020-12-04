@@ -29,7 +29,7 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 > Acrescente um link para o arquivo do notebook que executa o segundo conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
 > O link para queries da etapa 3 também deve aparecer aqui e as queries poderão ser revisadas.
 
-> Queries em Cypher: [Link](BD-Trabalho-final/stage04/src/queriesCypher.md)
+> Queries em Cypher: [Link](./src/queriesCypher.md)
 
 
 ## Bases de Dados
