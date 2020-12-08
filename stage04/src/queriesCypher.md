@@ -33,9 +33,7 @@ LIMIT 20
 ~~~
 
 
-## 2 - Juntar países por IDH
-
-
+## 2 - Junta países por IDH
 
 ~~~cypher
 
@@ -71,6 +69,12 @@ MATCH (c1:Country)-[:IdhAlto]->(c2:Country)
 RETURN c1, c2
 LIMIT 10
 
+~~~
+
+## 3 - Retorna casos e mortes de covid-19 em países de acordo com o IDH
+
+~~~cypher
+
 // Mostra os casos de covid-19 de acordo com o IDH do país
 
 
@@ -98,7 +102,7 @@ LIMIT 30
 ~~~
 
 
-## 3 - Liga dados de covid-19 dos países em continentes
+## 4 - Liga dados de covid-19 dos países ao seus continentes
 
 ~~~cypher
   
@@ -117,7 +121,7 @@ LIMIT 20
 
 ~~~
 
-## 4 - Mostra o número de mortes e casos de um continente específico
+## 5 - Mostra o número de mortes e casos de um continente específico
 
 ~~~cypher
 
