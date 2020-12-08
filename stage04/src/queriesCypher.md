@@ -141,7 +141,7 @@ RETURN SUM(toFloat(d.casos_total))
 
 ~~~
 
-## 6 - É criado vértices com os continentes, e para cada continente é criado duas arestas com o total de mortes e de casos.
+## 6 - Cria vértices para os continentes, e para cada continente é criado duas arestas com o total de mortes e de casos.
 
 ~~~cypher
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/lukeoluk/BD-Trabalho-final/main/stage04/data/casos-mortes-Continentes.csv' AS line 
