@@ -65,7 +65,7 @@ LIMIT 10
 MATCH(c1: Country)
 MATCH(c2: Country)
 WHERE c1.name <> c2.name AND toFloat(c1.idh) > 0.799 AND toFloat(c2.idh) > 0.799
-MERGE (c1)-[:IdhBaixo]->(c2) 
+MERGE (c1)-[:IdhAlto]->(c2) 
 
 MATCH (c1:Country)-[:IdhAlto]->(c2:Country) 
 RETURN c1, c2
@@ -88,18 +88,13 @@ LIMIT 30
 
 ~~~cypher
   
-MATCH(c: Country)                            // Pega casos de COVID até agosto
-MATCH(d: CasosCovid)
-WHERE c.iso_code = d.iso_code AND d.data = '2020-08-31'
-MERGE (c)-[:casosCovid]->(d)
-
 MATCH(c1: CountryAndContinent)  // Cria nós de continentes
 MERGE (:Continents {continent_name: c1.continent_name, continent_code: c1.continent_code})
 
 MATCH (c:Country)-[:casosCovid]->(d: CasosCovid)  // Liga os dados da covid-19 de cada país ao seu continente
 MATCH(con: Continents)
-WHERE c.continent = con.continent_name
-MERGE (d)-[:Covid19]->[con]
+WHERE c.continente = con.continent_name
+MERGE (d)-[:Covid19]->(con)
 
 
 MATCH (d:CasosCovid)-[:Covid19]->(con:Continents)
