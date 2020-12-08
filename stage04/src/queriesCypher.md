@@ -71,16 +71,30 @@ MATCH (c1:Country)-[:IdhAlto]->(c2:Country)
 RETURN c1, c2
 LIMIT 10
 
-// Motra os casos do covid junto com o IDH do país
+// Mostra os casos de covid-19 de acordo com o IDH do país
 
-MATCH(c: Country)                            // Pega casos de COVID até agosto
-MATCH(d: CasosCovid)
-WHERE c.iso_code = d.iso_code AND d.data = '2020-08-31'
-MERGE (c)-[:casosCovid]->(d)		// Cria arestas entre paises e seus casos de Covid
+
+// retornar casos covid e mortes - IDH baixo 
 
 MATCH (c:Country)-[:casosCovid]->(d:CasosCovid)  // Mostra arestas entre paises e seus casos de Covid
+WHERE toFloat(c.idh) < 0.5
 RETURN c, d
 LIMIT 30
+
+// retornar casos covid e mortes - IDH medio
+
+MATCH (c:Country)-[:casosCovid]->(d:CasosCovid)  // Mostra arestas entre paises e seus casos de Covid
+WHERE toFloat(c.idh) > 0.5 AND toFloat(c.idh) < 0.799
+RETURN c, d
+LIMIT 30
+
+// retornar casos covid e mortes - IDH alto
+
+MATCH (c:Country)-[:casosCovid]->(d:CasosCovid)  // Mostra arestas entre paises e seus casos de Covid
+WHERE toFloat(c.idh) >  0.799
+RETURN c, d
+LIMIT 30
+
 ~~~
 
 
