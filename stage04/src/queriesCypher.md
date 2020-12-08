@@ -46,7 +46,7 @@ MERGE (c1)-[:IdhBaixo]->(c2)
 
 MATCH (c1:Country)-[:IdhBaixo]->(c2:Country) 
 RETURN c1, c2
-LIMIT 10
+LIMIT 50
 
 
 
@@ -59,7 +59,7 @@ MERGE (c1)-[:IdhMedio]->(c2)
 
 MATCH (c1:Country)-[:IdhMedio]->(c2:Country) 
 RETURN c1, c2
-LIMIT 10
+LIMIT 50
 
 
 // Juntar os países por IDH alto
@@ -71,7 +71,7 @@ MERGE (c1)-[:IdhAlto]->(c2)
 
 MATCH (c1:Country)-[:IdhAlto]->(c2:Country) 
 RETURN c1, c2
-LIMIT 10
+LIMIT 50
 
 ~~~
 
