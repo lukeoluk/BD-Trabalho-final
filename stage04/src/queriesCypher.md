@@ -37,6 +37,8 @@ LIMIT 20
 
 ~~~cypher
 
+// Juntar os países por IDH baixo
+
 MATCH(c1: Country)
 MATCH(c2: Country)
 WHERE c1.name <> c2.name AND toFloat(c1.idh) < 0.5 AND toFloat(c2.idh) < 0.5
@@ -45,6 +47,8 @@ MERGE (c1)-[:IdhBaixo]->(c2)
 MATCH (c1:Country)-[:IdhBaixo]->(c2:Country) 
 RETURN c1, c2
 LIMIT 10
+
+
 
 // Juntar os países por IDH medio
 
