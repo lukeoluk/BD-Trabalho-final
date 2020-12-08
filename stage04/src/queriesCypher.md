@@ -141,5 +141,21 @@ RETURN SUM(toFloat(d.casos_total))
 
 ~~~
 
+## 6 - É criado vértices com os continentes, e para cada continente é criado duas arestas com o total de mortes e de casos.
+
+
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/lukeoluk/BD-Trabalho-final/main/stage04/data/casos-mortes-Continentes.csv' AS line 
+CREATE(:CasosMortes {Continente: line.Continente, Codigo: line.Codigo, Casos: line.Casos, Mortes: line.Mortes})
+
+MATCH(c:CasosMortes)
+CREATE (:Morte{qtdMortes: c.Mortes})-[:Mortes]->(c)
+
+MATCH(c:CasosMortes)
+CREATE (:QntCasos {qtdCasos: c.Casos})-[:Casos]->(c)
+
+MATCH (q:QntCasos)-[:Casos]->(c)<-[:Mortes]-(m:Morte)
+RETURN q,c,m
+
+
 
 
