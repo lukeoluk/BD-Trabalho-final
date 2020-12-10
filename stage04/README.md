@@ -33,6 +33,8 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 
 > Queries em Cypher: [Link](./src/queriesCypher.md)
 
+> Queries em SQL da Etapa 3: [Link](../stage3/notebook/queries.ipynb)
+
 
 ## Bases de Dados
 > Elencar as bases de dados utilizadas no projeto. Trata-se de uma atualização daquelas apresentadas na Etapa 3.
