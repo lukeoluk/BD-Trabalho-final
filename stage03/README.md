@@ -31,7 +31,7 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`<título da base>` | `<link para a página da base>` | `<breve descrição da base>`
+`Data on COVID-19 (coronavirus) by Our World in Data` | https://github.com/owid/covid-19-data/tree/master/public/data` | Dados diversos do covid-19 no mundo inteiro
 
 
 ## Arquivos de Dados
@@ -40,7 +40,7 @@ título da base | link | breve descrição
 nome do arquivo | link | breve descrição
 ----- | ----- | -----
 `owid-covid-data.csv` | [Link](data/owid-covid-data.csv) | Dados gerais sobre o covid em diversos paises
-`owid-country-data.csv` | [Link](data/owid-country-data.csv) | Arquivo processado obtido a partir do owid-covid-data.csv
+`owid-country-data.csv` | [Link](data/processado/owid-country-data.csv) | Arquivo processado obtido a partir do owid-covid-data.csv
 
 > Os arquivos devem ser colocados na pasta `data`, em subpasta conforme seu papel (externo, interim, processado, raw). A diferença entre externo e raw é que o raw é em formato não adaptado para uso. A pasta `raw` é opcional, pois pode ser substituída pelo link para a base original da seção anterior.
 > Coloque arquivos relacionais (usualmente CSV), XML ou JSON que não estejam disponíveis online e sejam acessados pelo notebook.
