@@ -33,7 +33,7 @@ título da base | link | breve descrição
 
 nome do arquivo | link | breve descrição
 ----- | ----- | -----
-`owid-covid-data.csv` | [Link](data/owid-covid-data.csv) | Dados gerais sobre o covid em diversos paises
+`owid-covid-data.csv` | [Link](data/owid-covid-data.csv) | Dados globais que analisam diversas características da população de um determinado país, como renda, expectativa de vida, etc.
 `owid-country-data.csv` | [Link](data/processado/owid-country-data.csv) | Arquivo processado obtido a partir do owid-covid-data.csv
 
 > Os arquivos devem ser colocados na pasta `data`, em subpasta conforme seu papel (externo, interim, processado, raw). A diferença entre externo e raw é que o raw é em formato não adaptado para uso. A pasta `raw` é opcional, pois pode ser substituída pelo link para a base original da seção anterior.
