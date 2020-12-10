@@ -3,7 +3,7 @@
 ## Primeiro Modelo Conceitual
 
 > Coloque aqui a imagem do primeiro modelo conceitual em ER ou UML, como o exemplo a seguir:
-> ![ER](./Diagrams/diagrama%20entidade-relacionamento.png)
+> ![ER](./Diagrams/er.png)
 
 ## Primeiros Modelos Lógicos
 
