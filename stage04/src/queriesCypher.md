@@ -193,12 +193,7 @@ LIMIT 20
 
 MATCH (d:CasosCovid)-[:Covid19]->(con:Continents)         // Retorna número de mortes de um continente especificado.
 WHERE con.continent_name = 'South America'                
-RETURN SUM(toFloat(d.mortes_total))
-
-
-MATCH (d:CasosCovid)-[:Covid19]->(con:Continents)         // Retorna número de casos de um continente especificado.
-WHERE con.continent_name = 'South America'                
-RETURN SUM(toFloat(d.casos_total))
+RETURN SUM(toFloat(d.mortes_total)), SUM(toFloat(d.casos_total))
 
 
 ~~~
