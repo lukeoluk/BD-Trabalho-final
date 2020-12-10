@@ -20,10 +20,6 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
   Ocupante chave estrangeira -> PESSOA(Código)
 ~~~
 
-## Programa de extração e conversão de dados atualizado
-
-> Coloque um link para o arquivo do notebook que executa a extração e conversão de dados. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se a extração e conversão envolverem queries executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
-
 ## Conjunto de queries de dois modelos
 
 > Acrescente um link para o arquivo do notebook que executa o segundo conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
