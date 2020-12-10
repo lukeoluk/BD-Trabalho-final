@@ -24,6 +24,8 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 
 > Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
 
+> Queries em SQL: [Link](./notebook/queries.ipynb)
+
 ## Bases de Dados
 > Elencar as bases de dados utilizadas no projeto. Trata-se de uma atualização daquelas apresentadas na Etapa 2.
 
@@ -37,7 +39,8 @@ título da base | link | breve descrição
 
 nome do arquivo | link | breve descrição
 ----- | ----- | -----
-`<nome do arquivo>` | `<link para o arquivo>` | `<breve descrição do arquivo>`
+`owid-covid-data.csv` | [Link](data/owid-covid-data.csv) | Dados gerais sobre o covid em diversos paises
+`owid-country-data.csv` | [Link](data/owid-country-data.csv) | Arquivo processado obtido a partir do owid-covid-data.csv
 
 > Os arquivos devem ser colocados na pasta `data`, em subpasta conforme seu papel (externo, interim, processado, raw). A diferença entre externo e raw é que o raw é em formato não adaptado para uso. A pasta `raw` é opcional, pois pode ser substituída pelo link para a base original da seção anterior.
 > Coloque arquivos relacionais (usualmente CSV), XML ou JSON que não estejam disponíveis online e sejam acessados pelo notebook.
