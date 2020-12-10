@@ -2,7 +2,7 @@
 
 ## Slides da Apresentação da Etapa
 
-> Coloque um link para o arquivo dos slides da apresentação que estão na pasta `slides`.
+> Apresentação: [Link](./slides/apresentacao.pdf)
 
 ## Modelo Conceitual Atualizado
 
