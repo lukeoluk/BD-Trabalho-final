@@ -79,9 +79,9 @@ LIMIT 50
 
 ~~~cypher
 
-MATCH(c: Country)                            // Pega casos de COVID até agosto
+MATCH(c: Country)                            // Pega casos de COVID até outubro
 MATCH(d: CasosCovid)
-WHERE c.iso_code = d.iso_code AND d.data = '2020-08-31'
+WHERE c.iso_code = d.iso_code AND d.data = '2020-10-20'
 MERGE (c)-[:casosCovid]->(d)
 
 
