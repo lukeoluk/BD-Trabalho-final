@@ -1,9 +1,8 @@
-Continente,Codigo,Casos,Mortes,,,,,,,,
-South America,SA,9030312,280601,,,,,,,,
-Europe,EU,7202584,240999,,,,,,,,
-North America,NA,9947521,331100,,,,,,,,
-Africa,AF,1656480,39931,,,,,,,,
-Asia,AS,12645615,225893,,,,,,,,
-Oceania,OC,37215,1021,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
+Continente,Codigo,Casos,Mortes
+South America,SA,9030312,280601
+Europe,EU,7202584,240999
+North America,NA,9947521,331100
+Africa,AF,1656480,39931
+Asia,AS,12645615,225893
+Oceania,OC,37215,1021
+
