@@ -30,7 +30,6 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 
 
 ## Bases de Dados
-> Elencar as bases de dados utilizadas no projeto. Trata-se de uma atualização daquelas apresentadas na Etapa 3.
 
 título da base | link | breve descrição
 ----- | ----- | -----
