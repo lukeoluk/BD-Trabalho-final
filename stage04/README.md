@@ -33,7 +33,7 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`Data on COVID-19 (coronavirus) by Our World in Data` | https://github.com/owid/covid-19-data/tree/master/public/data` | Dados globais que analisam diversas características da população de um determinado país, como renda, expectativa de vida, etc.
+`Data on COVID-19 (coronavirus) by Our World in Data` | https://github.com/owid/covid-19-data/tree/master/public/data` | 'Dados globais que analisam diversas características da população de um determinado país, como renda, expectativa de vida, etc.'
 `Country Borders` | https://github.com/geodatasource/country-borders | `Mostra as fronteiras dos países`
 `Country and Continent Codes List` | https://datahub.io/JohnSnowLabs/country-and-continent-codes-list | `Mostra países e qual continente eles pertencem`
 
