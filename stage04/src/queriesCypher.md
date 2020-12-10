@@ -79,6 +79,12 @@ LIMIT 50
 
 ~~~cypher
 
+MATCH(c: Country)                            // Pega casos de COVID até agosto
+MATCH(d: CasosCovid)
+WHERE c.iso_code = d.iso_code AND d.data = '2020-08-31'
+MERGE (c)-[:casosCovid]->(d)
+
+
 // Mostra os casos de covid-19 de acordo com o IDH do país
 
 
@@ -106,7 +112,63 @@ LIMIT 30
 ~~~
 
 
-## 4 - Liga dados de covid-19 dos países ao seus continentes
+## 4 - Mostra o tanto de mortes e casos no total de acordo com o IDH: baixo, medio e alto.
+
+~~~cypher
+
+// CRIA ARESTAS de paises para um vertice IDH BAIXO
+
+
+CREATE(:No_IdhBaixo {idh: "IDH BAIXO"})
+
+MATCH(c:Country)
+MATCH(i:No_IdhBaixo)
+WHERE toFloat(c.idh) < 0.5
+MERGE (c)-[:CM_IdhBaixo]->(i)
+
+// Retorna a soma de mortes e casos no total para países com IDH BAIXO
+
+MATCH (c:Country)-[:CM_IdhBaixo]->(i:No_IdhBaixo)
+MATCH (c2:CasosCovid)
+WHERE c.iso_code = c2.iso_code AND  c2.data = '2020-10-20'
+RETURN SUM(toFloat(c2.mortes_total)), SUM(toFloat(c2.casos_total))
+
+// CRIA ARESTAS de paises para um vertice IDH MÉDIO
+
+CREATE(:No_IdhMedio {idh: "IDH MEDIO"})
+
+MATCH(c:Country)
+MATCH(i:No_IdhMedio)
+WHERE toFloat(c.idh) > 0.5 AND toFloat(c.idh) < 0.799 
+MERGE (c)-[:CM_IdhMedio]->(i)
+
+// Retorna a soma de mortes e casos no total para países com IDH MEDIO
+
+MATCH (c:Country)-[:CM_IdhMedio]->(i:No_IdhMedio)
+MATCH (c2:CasosCovid)
+WHERE c.iso_code = c2.iso_code AND  c2.data = '2020-10-20'
+RETURN SUM(toFloat(c2.mortes_total)), SUM(toFloat(c2.casos_total))
+
+
+// CRIA ARESTAS de paises para um vertice IDH ALTO
+
+CREATE(:No_IdhAlto {idh: "IDH ALTO"})
+
+MATCH(c:Country)
+MATCH(i:No_IdhAlto)
+WHERE toFloat(c.idh) > 0.799 
+MERGE (c)-[:CM_IdhAlto]->(i)
+
+// Retorna a soma de mortes e casos no total para países com IDH ALTO
+
+MATCH (c:Country)-[:CM_IdhAlto]->(i:No_IdhAlto)
+MATCH (c2:CasosCovid)
+WHERE c.iso_code = c2.iso_code AND  c2.data = '2020-10-20'
+RETURN SUM(toFloat(c2.mortes_total)), SUM(toFloat(c2.casos_total))
+
+~~~
+
+## 5 - Liga dados de covid-19 dos países ao seus continentes
 
 ~~~cypher
   
@@ -125,7 +187,7 @@ LIMIT 20
 
 ~~~
 
-## 5 - Mostra o número de mortes e casos de um continente específico
+## 6 - Mostra o número de mortes e casos de um continente específico
 
 ~~~cypher
 
@@ -141,7 +203,7 @@ RETURN SUM(toFloat(d.casos_total))
 
 ~~~
 
-## 6 - Cria vértices para os continentes, e para cada continente é criado duas arestas com o total de mortes e de casos.
+## 7 - Cria vértices para os continentes, e para cada continente é criado duas arestas com o total de mortes e de casos.
 
 ~~~cypher
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/lukeoluk/BD-Trabalho-final/main/stage04/data/casos-mortes-Continentes.csv' AS line 
