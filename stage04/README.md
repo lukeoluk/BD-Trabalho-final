@@ -18,7 +18,7 @@
 
 > Queries em Cypher: [Link](./src/queriesCypher.md)
 
-> Queries em SQL da Etapa 3: [Link](../stage3/notebook/queries.ipynb)
+> Queries em SQL da Etapa 3: [Link](../stage03/notebook/queries.ipynb)
 
 
 ## Bases de Dados
