@@ -215,6 +215,31 @@ RETURN q,c,m
 
 ~~~
 
+## 8 - Calcula o pageRank baseado na quantidade de fronteiras dos países
+
+
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/lukeoluk/BD-Trabalho-final/main/stage04/data/GEODATASOURCE-COUNTRY-BORDERS.csv' AS line
+MERGE (p1:Page {name:line.country_code})
+MERGE (p2:Page {name:line.country_border_code})
+CREATE (p1)-[:LINKS]->(p2)
+
+// Calcula o pageRank
+
+CALL gds.pageRank.stream('CountryBordersGraph')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).name AS name, score
+ORDER BY score DESC, name ASC
+
+CALL gds.pageRank.stream('CountryBordersGraph')
+YIELD nodeId, score
+MATCH (p:CasosCovid {name: gds.util.asNode(nodeId).name})
+SET p.pagerank = score
+
+
+CALL gds.pageRank.stream('CountryBordersGraph')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).name AS name, score AS pagerank
+
 
 
 
