@@ -11,14 +11,7 @@
 
 ## Modelos Lógicos Atualizados
 
-> Coloque aqui os dois modelos lógicos dos bancos de dados relacionados aos modelos conceituais. O modelo lógico da etapa anterior pode ser copiado ou apresentado revisado. Para o modelo relacional, sugere-se o formato a seguir. Para outros modelos lógicos o formato é livre, pode ser adotado aqueles apresentados em sala.
-
-> Exemplo de modelo lógico relacional
-~~~
-PESSOA(_Código_, Nome, Telefone)
-ARMÁRIO(_Código_, Tamanho, Ocupante)
-  Ocupante chave estrangeira -> PESSOA(Código)
-~~~
+![Modelo Lógico](./assets/img/modelo_logico_tabelas.png)
 
 ## Conjunto de queries de dois modelos
 
