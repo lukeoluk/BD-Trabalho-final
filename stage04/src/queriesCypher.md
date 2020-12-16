@@ -9,7 +9,7 @@ CREATE(:CountryAndContinent {country_name: line.Country_Name, continent_name: li
 
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/lukeoluk/BD-Trabalho-final/main/stage04/data/owid-country-data.csv' AS line CREATE(:Country {iso_code: line.iso_code, continente: line.continent, name: line.location, idh: line.human_development_index, pib_per_capita: line.gdp_per_capita})
 
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/lukeoluk/BD-Trabalho-final/main/stage03/notebook/owid-covid-data.csv' AS line CREATE(:CasosCovid{iso_code: line.iso_code, data: line.date, casos_total: line.total_cases, novos_casos: line.new_cases, mortes_total: line.total_deaths, novas_mortes: line.new_tests, total_testes: line.total_tests})
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/lukeoluk/BD-Trabalho-final/main/stage03/notebook/owid-covid-data.csv' AS line CREATE(:CasosCovid{iso_code: line.iso_code, name: line.location, data: line.date, casos_total: line.total_cases, novos_casos: line.new_cases, mortes_total: line.total_deaths, novas_mortes: line.new_tests, total_testes: line.total_tests})
 
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/lukeoluk/BD-Trabalho-final/main/stage04/data/GEODATASOURCE-COUNTRY-BORDERS.csv' AS line
 CREATE(:CountryBorder {country_code: line.country_code,country_name: line.country_name, country_border_code: line.country_border_code,country_border_name: line.country_border_name})
