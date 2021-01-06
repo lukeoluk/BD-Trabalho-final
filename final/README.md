@@ -72,12 +72,15 @@ plt.show();
 
 > Coloque aqui os modelos lógicos dos bancos de dados relacionados aos modelos conceituais. Todos os modelos lógicos da versão final devem estar presentes, mesmo que tenham sido apresentados em etapas anteriores. Para o modelo relacional, sugere-se o formato a seguir. Para outros modelos lógicos o formato é livre, pode ser adotado aqueles apresentados em sala.
 
+
 > Exemplo de modelo lógico relacional
 ~~~
 PESSOA(_Código_, Nome, Telefone)
 ARMÁRIO(_Código_, Tamanho, Ocupante)
   Ocupante chave estrangeira -> PESSOA(Código)
 ~~~
+
+> ![ER Taxi](images/modelo_logico_tabelas.png)
 
 ## Programa de extração e conversão de dados atualizado
 
