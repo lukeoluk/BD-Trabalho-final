@@ -101,11 +101,16 @@ título da base | link | breve descrição
 
 
 ## Arquivos de Dados
-> Elencar os arquivos usados no projeto que estão disponíveis no Github do projeto. Apresente todos os arquivos usados na versão final, mesmo aqueles que tenham sido apresentadas em etapas anteriores.
 
 nome do arquivo | link | breve descrição
 ----- | ----- | -----
-`<nome do arquivo>` | `<link para o arquivo>` | `<breve descrição do arquivo>`
+`owid-covid-data.csv` | [Link](./data/owid-covid-data.csv) | `Dados do covid-19 em diversos países`
+`owid-country-data.csv`| [Link](./data/owid-country-data.csv) | `Dados de países como população, idh, etc.`
+`GEODATASOURCE-COUNTRY-BORDERS.csv` | [Link](./data/GEODATASOURCE-COUNTRY-BORDERS.csv) | `Mostra países que fazem fronteira`
+`country-and-continent-codes-list-csv_csv.csv` | [Link](./data/country-and-continent-codes-list-csv_csv.csv) | `Mostra os códigos de duas e três letras dos países e seus continentes.`
+`casos-mortes-Continentes.csv` | [Link](./data/processado/casos-mortes-Continentes.csv) | `Processado: Mostra mortes e casos dos continentes`
+`idh-mortes_casos_total.csv` | [Link](./data/processado/idh-mortes_casos_total.csv) | `Processado: Mostra mortes e casos por faixa de IDH`
+
 
 > Os arquivos devem ser colocados na pasta `data`, em subpasta conforme seu papel (externo, interim, processado, raw). A diferença entre externo e raw é que o raw é em formato não adaptado para uso. A pasta `raw` é opcional, pois pode ser substituída pelo link para a base original da seção anterior.
 > Coloque arquivos relacionais (usualmente CSV), XML ou JSON que não estejam disponíveis online e sejam acessados pelo notebook.
