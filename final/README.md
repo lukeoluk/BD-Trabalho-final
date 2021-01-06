@@ -23,7 +23,7 @@ Estrutura de pastas:
 
 # Etapa Final
 
-## Projeto `<Título do Projeto>`
+## Projeto `Covid-19 - Análise socioeconômica na pandemia`
 
 ## Equipe `Grupo Genérico de BD`
 * `Lucas Fernandes André        RA: 182495`
