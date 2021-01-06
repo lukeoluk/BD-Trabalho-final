@@ -66,8 +66,7 @@ plt.show();
 
 ## Modelo Conceitual Final
 
-> Coloque aqui a imagem do modelo conceitual final em ER ou UML, como o exemplo a seguir:
-> ![ER Taxi](images/er-taxi.png)
+> ![ER Taxi](images/ER2.jpg)
 
 ## Modelos Lógicos Finais
 
