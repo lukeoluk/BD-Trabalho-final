@@ -52,7 +52,7 @@ plt.show();
 > Coloque um link para o arquivo do notebook que executa a extração e conversão de dados. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se a extração e conversão envolverem queries executadas através de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
 
 ## Conjunto de queries para todos os modelos
-> Notebook com as queries utilizadas no projeto final: [Link](notebooks/queries .ipynb)
+> Notebook com as queries utilizadas no projeto final: [Link](notebooks/queries.ipynb)
 
 > Acrescente um link para o(s) arquivo(s) do(s) notebook(s) que executa(m) as queries para cada um dos modelos lógicos. Eles estarão dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas através de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
 > Apresente todas as suas queries em versão final, mesmo que tenham aparecido em etapas anteriores.
@@ -61,7 +61,7 @@ plt.show();
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`Data on COVID-19 (coronavirus) by Our World in Data` | https://github.com/owid/covid-19-data/tree/master/public/data` |  `Dados globais que analisam diversas características da população de um determinado país, como renda, expectativa de vida, etc.`
+`Data on COVID-19 (coronavirus) by Our World in Data` | https://github.com/owid/covid-19-data/tree/master/public/data |  `Dados globais que analisam diversas características da população de um determinado país, como renda, expectativa de vida, etc.`
 `Country Borders` | https://github.com/geodatasource/country-borders | `Mostra as fronteiras dos países`
 `Country and Continent Codes List` | https://datahub.io/JohnSnowLabs/country-and-continent-codes-list | `Mostra países e qual continente eles pertencem`
 `List of continent codes` | https://datahub.io/core/continent-codes | `Continentes e seus respectivos códigos`
@@ -74,10 +74,10 @@ título da base | link | breve descrição
 nome do arquivo | link | breve descrição
 ----- | ----- | -----
 `owid-covid-data.csv` | [link](data/externo/owid-covid-data.csv) | `Dados do covid-19 em diversos países`
-`GEODATASOURCE-COUNTRY-BORDERS.csv` | [link](data/externo/GEODATASOURCE-COUNTRY-BORDERS.csv) | `Mostra países que fazem fronteira`
+`GEODATASOURCE-COUNTRY-BORDERS.csv` | [link](data/externo/GEODATASOURCE-COUNTRY-BORDERS.csv) | `Mostra países que fazem fronteira entre si`
 `country-and-continent-codes-list-csv_csv.csv` | [link](data/externo/country-and-continent-codes-list-csv_csv.csv) | `Mostra os códigos de duas e três letras dos países e seus continentes.`
-`continent-codes_csv` | [link](data/externo/continent-codes_csv) | `Códigos e nomes dos continentes do mundo`
-`owid-country-data.csv`| [link](data/externo/owid-country-data.csv) | `Processado:  Dados de países como população, idh, etc. retirado originalmente de [owid-covid-data.csv](data/externo/owid-covid-data.csv)`
+`continent-codes_csv` | [link](data/externo/continent-codes_csv.csv) | `Códigos e nomes dos continentes do mundo`
+`owid-country-data.csv`| [link](data/processado/owid-country-data.csv) | `Processado:  Dados de países como população, idh, etc. retirado originalmente de owid-covid-data.csv`
 `casos-mortes-Continentes.csv` | [link](data/processado/casos-mortes-Continentes.csv) | `Processado: Mostra mortes e casos dos continentes`
 `idh-mortes_casos_total.csv` | [link](data/processado/idh-mortes_casos_total.csv) | `Processado: Mostra mortes e casos por faixa de IDH`
 `iso_2c_cases.csv` | [link](data/processado/iso_2c_cases.csv) | `Processado: Utilizado para visualização no Cytoscape`
