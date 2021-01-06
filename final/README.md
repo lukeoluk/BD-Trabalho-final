@@ -25,14 +25,14 @@ Estrutura de pastas:
 
 ## Projeto `<Título do Projeto>`
 
-## Equipe Grupo Genérico de BD
-* Lucas Fernandes André        RA: 182495
-* Gabriel Massuyoshi Sato      RA: 172278
-* Caio Lucas Silveira De Sousa RA: 165461
+## Equipe `Grupo Genérico de BD`
+* `Lucas Fernandes André        RA: 182495`
+* `Gabriel Massuyoshi Sato      RA: 172278`
+* `Caio Lucas Silveira De Sousa RA: 165461`
 
 ## Slides da Apresentação da Etapa Final
 
-> Coloque um link para o arquivo dos slides da apresentação final que estão na pasta `slides`.
+> Apresentação: [Link](./slides/apresentação.pdf)
 
 ## Resumo do Projeto
 > Texto resumindo o projeto.
