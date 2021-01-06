@@ -25,10 +25,10 @@ Estrutura de pastas:
 
 ## Projeto `<Título do Projeto>`
 
-## Equipe `<nome da equipe>`
-* `<nome completo>`
-* `<nome completo>`
-* `<nome completo>`
+## Equipe `Grupo Genérico de BD`
+* `Lucas Fernandes André        RA: 182495`
+* `Gabriel Massuyoshi Sato      RA: 172278`
+* `Caio Lucas Silveira De Sousa RA: 165461`
 
 ## Slides da Apresentação da Etapa Final
 
