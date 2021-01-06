@@ -56,6 +56,8 @@ plt.show();
 
 > Markdown com as queries em Cypher utilizadas no projeto: [Link](./src/queriesCypher.md)
 
+> Notebook com as queries da Etapa 3: [Link](../stage03/notebook/queries.ipynb)
+
 > Acrescente um link para o(s) arquivo(s) do(s) notebook(s) que executa(m) as queries para cada um dos modelos lógicos. Eles estarão dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas através de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
 > Apresente todas as suas queries em versão final, mesmo que tenham aparecido em etapas anteriores.
 
