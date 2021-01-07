@@ -55,29 +55,39 @@ Algumas dificuldades encontradas foram em relação às bases de dados, no caso 
 
 
 ## Resultados e Discussão
-> Apresente os resultados da forma mais rica possível, com gráficos e tabelas. Mesmo que o seu código rode online em um notebook, copie para esta parte a figura estática. A referência a código e links para execução online pode ser feita aqui ou na seção de detalhamento do projeto (o que for mais pertinente).
 > A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
 
+### Fronteiras x COVID-19
+
 Para analisar a relação entre fronteiras x casos de COVID-19, utilizamos uma visualização em grafos e juntamente com o Cytoscape realizamos um ranqueamento dos países de acordo com suas fronteiras utilizando o algoritmo de Page Rank:  
+
 ![fronteiras_covid_grafo1](images/fronteiras_covid_grafo1.png)
 
 Juntamente com o grafo, realizamos uma query em SQL para juntar as informações de quantidade de fronteiras e número de casos de COVID-19:  
+
 ![fronteiras_covid_grafo2](images/fronteiras_covid_grafo2.png)
 
 Tendo uma melhor visualização com o grafo + tabela, realizamos a construção de mais um grafo aumentando o tamanho dos nós de acordo com o número de casos que o país possui:  
+
 ![fronteiras_covid_tabela](images/fronteiras_covid_tabela.png)
 
 Com essas três análises dispostas lado a lado, podemos ter como resultado da análise que:
 * Não necessariamente um país que possui fronteira com outro tende a ter número de casos de COVID-19 semelhantes;
 * Entende-se assim que as fronteiras não são um fator determinante para se saber o número de casos de COVID-19 em um determinado país.
 
-As duas tabelas apresentadas abaixo mostram diversos países com suas respectivas taxas de letalidade e IDH, ordenadas de maneira decrescente pelo IDH. É possível notar que países com IDH alto tendem a ter letalidade menor do que países com IDH baixo, mas não há uma diferença significativa entre os valores entre esses dois conjuntos de países.  
+### Letalidade x IDH
+
+As duas tabelas apresentadas abaixo mostram diversos países com suas respectivas taxas de letalidade e IDH, ordenadas de maneira decrescente pelo IDH. É possível notar que países com IDH alto tendem a ter letalidade menor do que países com IDH baixo, mas não há uma diferença significativa entre os valores entre esses dois conjuntos de países. 
+
 ![letalidade_covid_tabela1](images/letalidade_covid_tabela1.png)
 
 Na terceira tabela abaixo, é mostrado todos os continentes com as mortes por Covid, sua população total, a quantidade de países nesse continente, a média dos IDHs dos países que fazem parte desse continente, e a porcentagem de mortes. A tabela foi ordenada de forma decrescente em relação à porcentagem de mortes. Podemos ver que continentes com a média de IDH maior não possuem menor porcentagem de mortes em relação à população.  
+
 ![letalidade_covid_tabela2](images/letalidade_covid_tabela2.png)
 
 A partir dessas tabelas apresentadas e seus resultados, principalmente as duas primeiras, podemos ver que a análise faz um certo sentido, como países com IDH maior terem uma letalidade menor, mas os números ficaram muito próximos se compararmos com países com IDH menor. Para uma análise mais segura e consistente, teríamos que considerar diversos outros fatores e outras bases de dados. Poderíamos fazer relações esses dados usando ciência de dados para ter uma análise mais contundente, mas esse não era o nosso objetivo neste trabalho.
+
+As queries para as duas análises podem ser achadas na seção "Conjunto de queries para todos os modelos".
 
 ## Conclusões
 Ao começar o trabalho, tínhamos algumas hipóteses acerca da propagação do Covid e de sua taxa de mortalidade, sendo eles: Países que fazem fronteira um com o outro possuem número de casos semelhantes, dada sua proximidade; Países/Continentes com IDH menor apresentam taxa de mortalidade maior pelo vírus. Após as análises e resultados apresentados anteriormente, nota-se que países vizinhos não possuem casos semelhantes e que há uma tendência a países com muitas fronteiras terem um maior número de casos (Com exceção dos EUA e Tanzânia, porém pode-se entender que os Estados Unidos são uma exceção dada a quantidade de voos internacionais que passam por seu território). Também notou-se que países com IDH reduzido apresentavam uma taxa de mortalidade ligeiramente menor que países com maior IDH, o que nos pareceu estranho, tal resultado pode ser fruto da falta de diagnóstico definitivo nos mortos e doentes, uma vez que muitas vezes os países não possuem recursos para tal.
