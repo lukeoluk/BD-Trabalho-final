@@ -23,14 +23,26 @@ Algumas expectativas sobre as análises a serem mostradas foram criadas, levando
 
 
 ## Detalhamento do Projeto
-> Apresente aqui detalhes da análise. Nesta seção ou na seção de Resultados podem aparecer destaques de código como indicado a seguir. Note que foi usada uma técnica de highlight de código, que envolve colocar o nome da linguagem na abertura de um trecho com `~~~`, tal como `~~~python`.
-> Os destaques de código devem ser trechos pequenos de poucas linhas, que estejam diretamente ligados a alguma explicação. Não utilize trechos extensos de código. Se algum código funcionar online (tal como um Jupyter Notebook), aqui pode haver links. No caso do Jupyter, preferencialmente para o Binder abrindo diretamente o notebook em questão.
+Inicialmente, utilizamos a tabela Country e a CountryBorders para fazer um PageRank, para a verificação dos países com maior quantidade de fronteiras, em que usamos um modelo de grafo para sua representação visual. Depois em um modelo de tabelas, relacionamos o número de fronteiras com os números de casos de Covid e ordenamos os países por quantidade de fronteiras em ordem decrescente. Após esta análise, fizemos uma integração do SQL com o Cytoscape para comparar os países que estão ligados e verificar a ocorrência de Covid. Cada nó representa um país, seu tamanho é referente ao número de casos e vértices são fronteiras entre países, a partir desse grafo, tiramos conclusões acerca da hipótese destas duas variáveis estarem relacionadas.  
+Nossa segunda análise foi por um modelo de tabelas em que comparamos o IDH dos países com seu índice de letalidade, e ordenamos as letalidades por IDH de maneira decrescente. A partir da análise, notou-se que países com menor IDH possuem letalidade ligeiramente maior que países com maior IDH, podendo significar que o IDH não é um fator tão dominante para a letalidade, dada as ressalvas que serão apresentadas posteriormente. Após esta análise inicial, resolvemos analisar os continentes conforme seu índice de mortes e seu IDH médio, novamente a análise nos mostrou que continentes com maior IDH não possuem menor porcentagem de mortes em relação à população.
 
-~~~python
-df = pd.read_excel("/content/drive/My Drive/Colab Notebooks/dataset.xlsx");
-sns.set(color_codes=True);
-sns.distplot(df.Hemoglobin);
-plt.show();
+As queries SQL podem ser consultadas na seção "Conjunto de queries para todos os modelos".
+
+Código para realizar o pagerank e exportar para .csv:  
+~~~cypher
+CALL gds.pageRank.stream('CountryBordersGraph')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).name AS name, score
+ORDER BY score DESC, name ASC
+
+CALL gds.pageRank.stream('CountryBordersGraph')
+YIELD nodeId, score
+MATCH (p:CasosCovid {name: gds.util.asNode(nodeId).name})
+SET p.pagerank = score
+
+CALL gds.pageRank.stream('CountryBordersGraph')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).name AS name, score AS pagerank
 ~~~
 
 ## Evolução do Projeto
