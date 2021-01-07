@@ -19,9 +19,9 @@ A partir dos dados diversos de diferentes países, será analisado os dados soci
 Sendo que o ano de 2020 foi um ano atípico, em que a população global vem sofrendo com uma epidemia que ainda está deixando vítimas por todos os lugares, não há um assunto mais comentado que poderia ser abordado para este estudo.  
 Com isso, foi decidido o tema: Covid-19 - Análise socioeconômica na pandemia.    Dado que transmissão e mortes pelo Covid-19 estão crescendo no Brasil, surgiu a curiosidade de saber esses números em outros países, e se esses números de casos e mortes poderiam estar associados a questões socioeconômicas, e o quanto esses fatores são importantes, como por exemplo o IDH do país.  
 Algumas expectativas sobre as análises a serem mostradas foram criadas, levando em conta as notícias sobre a doença ao redor do mundo:
-* `Espera-se um número de letalidade maior entre países com IDH baixo;`
-* `Países que possuem maior quantidade de fronteiras tem um nível maior de contágio;`
-* `Países vizinhos possuem níveis de contágio parecidos.`
+* Espera-se um número de letalidade maior entre países com IDH baixo;
+* Países que possuem maior quantidade de fronteiras tem um nível maior de contágio;
+* Países vizinhos possuem níveis de contágio parecidos.
 
 
 ## Detalhamento do Projeto
@@ -36,8 +36,9 @@ plt.show();
 ~~~
 
 ## Evolução do Projeto
+
 Inicialmente começamos com a ideia de realizar análises mais pontuais e específicas de um país (Taiwan) com seus indicadores socioeconômicos e compará-las com o mundo. Após o estágio 2, entendemos que seria melhor abranger mais as análises, por conta das informações iniciais que tínhamos coletado e decidimos fazer um estudo sobre o contágio e mortalidade no mundo.
-No decorrer do projeto, nos deparamos com a carência de dados para a análise, visto que a base de dados principal possuía muitas informações concentradas em somente uma tabela. A fim de explorar mais as técnicas de banco de dados, conversamos com o professor e ele sugeriu que fizéssemos uma análise geográfica em conjunto a socioeconômica. Depois de algumas pesquisas, decidimos adicionar bases de dados sobre fronteiras como indicador geográfico da análise.
+No decorrer do projeto, nos deparamos com a carência de dados para a análise, visto que a base de dados principal possuía muitas informações concentradas em somente uma tabela. A fim de explorar mais as técnicas de banco de dados, conversamos com o professor e ele sugeriu que fizéssemos uma análise geográfica em conjunto a socioeconômica. Depois de algumas pesquisas, decidimos adicionar bases de dados sobre fronteiras como indicador geográfico da análise. 
 Adicionando mais bases de dados ao projeto, vimos a necessidade de alterar os modelos lógicos e relacionais, criando entidades que não existiam antes e adicionando dados a entidades para poderem se relacionar. Durante a reformulação dos modelos, percebemos que estávamos no caminho certo, já que os estudos que foram propostos estavam fazendo mais sentido para o grupo.
 Após algumas reuniões para discussão das análises finais que seriam feitas, conseguimos integrar os indicadores geográficos aos dados sobre COVID-19 em três análises apresentadas na etapa final. Com os resultados das queries e grafos criados, fomos às notícias sobre COVID-19 no mundo para entender melhor qual o significado dos estudos feitos e se eles correspondiam às nossas expectativas.
 Com todo o trabalho concluído, aprendemos que a ciência de dados é algo muito complexo e que necessita de muitos fatores e indicadores para se realizar algum estudo e análise coerente. Apesar de utilizarmos bastante dados, o tema que escolhemos demandaria várias outras informações, como rotas de voos e relatório sobre as testagens que ocorrem dentro de cada país para termos análises mais valiosas.
