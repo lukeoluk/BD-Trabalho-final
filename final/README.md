@@ -37,12 +37,12 @@ plt.show();
 
 ## Evolução do Projeto
 
-Inicialmente começamos com a ideia de realizar análises mais pontuais e específicas de um país (Taiwan) com seus indicadores socioeconômicos e compará-las com o mundo. Após o estágio 2, entendemos que seria melhor abranger mais as análises, por conta das informações iniciais que tínhamos coletado e decidimos fazer um estudo sobre o contágio e mortalidade no mundo.
-No decorrer do projeto, nos deparamos com a carência de dados para a análise, visto que a base de dados principal possuía muitas informações concentradas em somente uma tabela. A fim de explorar mais as técnicas de banco de dados, conversamos com o professor e ele sugeriu que fizéssemos uma análise geográfica em conjunto a socioeconômica. Depois de algumas pesquisas, decidimos adicionar bases de dados sobre fronteiras como indicador geográfico da análise. 
-Adicionando mais bases de dados ao projeto, vimos a necessidade de alterar os modelos lógicos e relacionais, criando entidades que não existiam antes e adicionando dados a entidades para poderem se relacionar. Durante a reformulação dos modelos, percebemos que estávamos no caminho certo, já que os estudos que foram propostos estavam fazendo mais sentido para o grupo.
-Após algumas reuniões para discussão das análises finais que seriam feitas, conseguimos integrar os indicadores geográficos aos dados sobre COVID-19 em três análises apresentadas na etapa final. Com os resultados das queries e grafos criados, fomos às notícias sobre COVID-19 no mundo para entender melhor qual o significado dos estudos feitos e se eles correspondiam às nossas expectativas.
-Com todo o trabalho concluído, aprendemos que a ciência de dados é algo muito complexo e que necessita de muitos fatores e indicadores para se realizar algum estudo e análise coerente. Apesar de utilizarmos bastante dados, o tema que escolhemos demandaria várias outras informações, como rotas de voos e relatório sobre as testagens que ocorrem dentro de cada país para termos análises mais valiosas.
-Algumas dificuldades encontradas foram em relação às bases de dados, no caso o de tabelas, em que diversas linhas ou colunas estavam faltando informações dos países, o que dificultou muito o trabalho para usar o modelo Relacional, devido a integridade dos dados ao fazer as queries em SQL. Para isso, foi necessário fazer um processamento nessas tabelas para remover essas inconsistências. Outro ponto de dificuldade foi o fato do notebook Jupyter estar H2 database engine, que não é o mais familiar para o grupo. Após pesquisas sobre alguns alter tables nessa engine conseguimos prosseguir. Somente após terminar as queries que descobrimos que a engine poderia ser facilmente alterada para, por exemplo, MySQL.
+Inicialmente começamos com a ideia de realizar análises mais pontuais e específicas de um país (Taiwan) com seus indicadores socioeconômicos e compará-las com o mundo. Após o estágio 2, entendemos que seria melhor abranger mais as análises, por conta das informações iniciais que tínhamos coletado e decidimos fazer um estudo sobre o contágio e mortalidade no mundo.  
+No decorrer do projeto, nos deparamos com a carência de dados para a análise, visto que a base de dados principal possuía muitas informações concentradas em somente uma tabela. A fim de explorar mais as técnicas de banco de dados, conversamos com o professor e ele sugeriu que fizéssemos uma análise geográfica em conjunto a socioeconômica. Depois de algumas pesquisas, decidimos adicionar bases de dados sobre fronteiras como indicador geográfico da análise.   
+Adicionando mais bases de dados ao projeto, vimos a necessidade de alterar os modelos lógicos e relacionais, criando entidades que não existiam antes e adicionando dados a entidades para poderem se relacionar. Durante a reformulação dos modelos, percebemos que estávamos no caminho certo, já que os estudos que foram propostos estavam fazendo mais sentido para o grupo.  
+Após algumas reuniões para discussão das análises finais que seriam feitas, conseguimos integrar os indicadores geográficos aos dados sobre COVID-19 em três análises apresentadas na etapa final. Com os resultados das queries e grafos criados, fomos às notícias sobre COVID-19 no mundo para entender melhor qual o significado dos estudos feitos e se eles correspondiam às nossas expectativas.  
+Com todo o trabalho concluído, aprendemos que a ciência de dados é algo muito complexo e que necessita de muitos fatores e indicadores para se realizar algum estudo e análise coerente. Apesar de utilizarmos bastante dados, o tema que escolhemos demandaria várias outras informações, como rotas de voos e relatório sobre as testagens que ocorrem dentro de cada país para termos análises mais valiosas.  
+Algumas dificuldades encontradas foram em relação às bases de dados, no caso o de tabelas, em que diversas linhas ou colunas estavam faltando informações dos países, o que dificultou muito o trabalho para usar o modelo Relacional, devido a integridade dos dados ao fazer as queries em SQL. Para isso, foi necessário fazer um processamento nessas tabelas para remover essas inconsistências. Outro ponto de dificuldade foi o fato do notebook Jupyter estar H2 database engine, que não é o mais familiar para o grupo. Após pesquisas sobre alguns alter tables nessa engine conseguimos prosseguir. Somente após terminar as queries que descobrimos que a engine poderia ser facilmente alterada para, por exemplo, MySQL.  
 
 
 ## Resultados e Discussão
@@ -63,14 +63,11 @@ Ao começar o trabalho, tínhamos algumas hipóteses acerca da propagação do C
 > Coloque um link para o arquivo do notebook que executa a extração e conversão de dados. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se a extração e conversão envolverem queries executadas através de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
 
 ## Conjunto de queries para todos os modelos
-> Notebook com as queries utilizadas no projeto final: [Link](notebooks/queries.ipynb)
+Notebook com as queries utilizadas no projeto final: [Link](notebooks/queries.ipynb)
 
-> Markdown com as queries em Cypher utilizadas no projeto: [Link](./src/queriesCypher.md)
+Markdown com as queries em Cypher utilizadas no projeto: [Link](./src/queriesCypher.md)
 
-> Notebook com as queries da Etapa 3: [Link](../stage03/notebook/queries.ipynb)
-
-> Acrescente um link para o(s) arquivo(s) do(s) notebook(s) que executa(m) as queries para cada um dos modelos lógicos. Eles estarão dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas através de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
-> Apresente todas as suas queries em versão final, mesmo que tenham aparecido em etapas anteriores.
+Notebook com as queries da Etapa 3: [Link](../stage03/notebook/queries.ipynb)
 
 ## Bases de Dados
 
