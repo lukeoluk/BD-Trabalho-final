@@ -55,7 +55,6 @@ Algumas dificuldades encontradas foram em relação às bases de dados, no caso 
 
 
 ## Resultados e Discussão
-> A discussão dos resultados também pode ser feita aqui na medida em que os resultados são apresentados ou em seção independente. Aspectos importantes a serem discutidos: É possível tirar conclusões dos resultados? Quais? Há indicações de direções para estudo? São necessários trabalhos mais profundos?
 
 ### Fronteiras x COVID-19
 
